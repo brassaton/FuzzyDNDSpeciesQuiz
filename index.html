@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>D&D Species Quiz</title><link rel="stylesheet" href="style.css?v=species1"></head>
+<body><div class="sky" aria-hidden="true"><div class="cloud cloud-a"></div><div class="cloud cloud-b"></div><div class="cloud cloud-c"></div><div class="cloud cloud-d"></div><div class="cloud cloud-e"></div></div>
+<main class="app">
+<section id="start-screen" class="screen active"><div class="window title-window"><div class="window-bar">D&D SPECIES QUIZ</div><div class="window-body center">
+<div class="pixel-sparkles">✦　✧　✦</div><h1>What D&amp;D Species<br>Should You Play?</h1>
+<p class="lead">Answer fantasy-focused YES or NO questions. Each answer narrows the species pool, so the quiz keeps asking about the things that matter most to your remaining choices.</p>
+<div class="info-window"><div><b>ADAPTIVE PATH</b><span>questions change with your answers</span></div><div><b>90+ SPECIES</b><span>official &amp; homebrew choices</span></div><div><b>DEDUCTIVE MATCH</b><span>the pool gets thinner every step</span></div></div>
+<div class="start-actions"><button id="start-btn" class="pixel-button primary">▶ START QUIZ</button><button id="random-btn" class="pixel-button random-button">✦ RANDOM SPECIES!</button></div>
+</div></div></section>
+<section id="quiz-screen" class="screen"><div class="quiz-layout"><div class="window question-window"><div class="window-bar"><span>D&D SPECIES QUIZ</span><span id="progress-label"></span></div><div class="window-body">
+<div id="question-category" class="category-label"></div><div id="question-help" class="question-mark" aria-label="How the adaptive path works">?</div>
+<h2 id="question-text"></h2><div class="progress"><div id="progress-bar"></div></div><div id="candidate-count" class="candidate-count"></div>
+<div id="answers" class="answers"></div><div class="quiz-controls single-control"><button id="back-btn" class="pixel-button secondary">◀ BACK</button></div>
+</div></div></div></section>
+<section id="results-screen" class="screen"><div class="window result-window"><div class="window-bar">YOUR RESULT</div><div class="window-body">
+<div class="result-intro">YOU SHOULD PLAY...</div><h2 id="result-species" class="result-species"></h2><div id="species-tags" class="species-tags"></div>
+<p id="result-description" class="lead result-description"></p>
+<div class="result-section"><h4>YOUR DEDUCTIVE PATH</h4><div id="path-box" class="path-box"></div></div>
+<div class="result-section"><h4>FINAL CANDIDATES</h4><div id="final-candidates" class="match-grid"></div></div>
+<button id="restart-btn" class="pixel-button primary">↻ TAKE IT AGAIN</button>
+</div></div></section></main><script src="script.js?v=species1"></script></body></html>
